@@ -23,6 +23,7 @@ class FilmItemAdapter(private val context: Context, private val filmItemList:Mut
 
     override fun getItemCount(): Int {
         return filmItemList.size
+        
     }
 
     class FilmItemViewHolder(filmItemLayoutBinding: FilmItemLayoutBinding)

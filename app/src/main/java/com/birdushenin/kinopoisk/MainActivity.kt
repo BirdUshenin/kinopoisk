@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
-import com.birdushenin.kinopoisk.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding:ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,7 +17,7 @@ class MainActivity : AppCompatActivity() {
                 add<PageFragment>(R.id.fragment_container, FRAGMENT_CHARACTERS)
             }
         }
-        binding = ActivityMainBinding.inflate(layoutInflater)
+
     }
 
     private companion object {

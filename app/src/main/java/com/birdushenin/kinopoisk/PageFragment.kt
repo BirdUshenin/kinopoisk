@@ -9,7 +9,6 @@ import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.birdushenin.kinopoisk.databinding.FragmentPageBinding
 
-
 class PageFragment : Fragment() {
     private val viewModel: ViewModel by activityViewModels()
 

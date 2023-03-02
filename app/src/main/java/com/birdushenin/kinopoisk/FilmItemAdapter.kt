@@ -34,6 +34,5 @@ class FilmItemAdapter(private val context: Context, private val filmItemList:Mut
             binding.nameFilm.text = filmItem.name
             binding.yearFilm.text = "Rs. ${filmItem.year}"
         }
-
         }
     }

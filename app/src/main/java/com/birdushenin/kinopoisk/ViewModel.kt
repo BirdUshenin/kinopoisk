@@ -2,7 +2,6 @@ package com.birdushenin.kinopoisk
 
 import androidx.lifecycle.ViewModel
 
-
 class ViewModel : ViewModel() {
 
     val filmItemsList = listOf(

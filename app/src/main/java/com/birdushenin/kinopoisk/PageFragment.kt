@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.birdushenin.kinopoisk.adapter.FilmItem
+import com.birdushenin.kinopoisk.adapter.FilmItemAdapter
 import com.birdushenin.kinopoisk.databinding.FragmentPageBinding
 
 class PageFragment : Fragment() {

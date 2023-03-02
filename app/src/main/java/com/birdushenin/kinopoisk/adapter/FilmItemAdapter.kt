@@ -1,4 +1,4 @@
-package com.birdushenin.kinopoisk
+package com.birdushenin.kinopoisk.adapter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,7 +10,7 @@ import com.birdushenin.kinopoisk.databinding.FilmItemLayoutBinding
 class FilmItemAdapter(private val context: Context, private val filmItemList:MutableList<FilmItem>)
     : RecyclerView.Adapter<FilmItemAdapter.FilmItemViewHolder>() {
 
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmItemViewHolder{
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmItemViewHolder {
             val binding = FilmItemLayoutBinding.inflate(LayoutInflater.from(context), parent, false)
 
             return FilmItemViewHolder(binding)

@@ -1,6 +1,7 @@
 package com.birdushenin.kinopoisk
 
 import androidx.lifecycle.ViewModel
+import com.birdushenin.kinopoisk.adapter.FilmItem
 
 class ViewModel : ViewModel() {
 

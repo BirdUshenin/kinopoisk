@@ -36,5 +36,4 @@ class FilmItemAdapter(private val context: Context, private val filmItemList:Mut
         }
 
         }
-
     }

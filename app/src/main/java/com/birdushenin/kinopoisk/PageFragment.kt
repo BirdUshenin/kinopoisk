@@ -18,16 +18,14 @@ class PageFragment : Fragment() {
     private val filmItemsList: MutableList<FilmItem> = mutableListOf()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
         val view = inflater.inflate(R.layout.fragment_page, container, false)
-        val binding = FragmentPageBinding.bind(view)
 
-        b = FragmentPageBinding.inflate(layoutInflater)
+        b = FragmentPageBinding.bind(view)
 
         populateList()
         setUpAdapter()
 
-        binding.newFragment.setOnClickListener{
+        b.newFragment.setOnClickListener{
             val newFragment = ListFragment()
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, newFragment)
@@ -54,4 +52,3 @@ class PageFragment : Fragment() {
         }
     }
 }
-

@@ -17,11 +17,9 @@ class MainActivity : AppCompatActivity() {
                 add<PageFragment>(R.id.fragment_container, FRAGMENT_CHARACTERS)
             }
         }
-
     }
 
     private companion object {
         private const val FRAGMENT_CHARACTERS = "characters"
-
     }
 }

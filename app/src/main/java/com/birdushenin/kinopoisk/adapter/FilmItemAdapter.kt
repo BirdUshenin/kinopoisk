@@ -23,17 +23,15 @@ class FilmItemAdapter(private val context: Context, private val filmItemList:Mut
 
     override fun getItemCount(): Int {
         return filmItemList.size
-
     }
 
-    class FilmItemViewHolder(filmItemLayoutBinding: FilmItemLayoutBinding)
+    class FilmItemViewHolder(private val filmItemLayoutBinding: FilmItemLayoutBinding)
         : RecyclerView.ViewHolder(filmItemLayoutBinding.root){
-            private val binding = filmItemLayoutBinding
 
         @SuppressLint("SetTextI18n")
         fun bind(filmItem: FilmItem){
-            binding.nameFilm.text = filmItem.name
-            binding.yearFilm.text = "Rs. ${filmItem.year}"
+            filmItemLayoutBinding.nameFilm.text = filmItem.name
+            filmItemLayoutBinding.yearFilm.text = "Rs. ${filmItem.year}"
         }
         }
     }

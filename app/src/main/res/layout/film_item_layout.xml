@@ -13,13 +13,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/name_film"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tx1"
+        android:text="@string/text_name_film"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/poster"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:text="@string/tx2"
+        android:text="@string/text_year"
         app:layout_constraintStart_toEndOf="@+id/poster"
         app:layout_constraintTop_toBottomOf="@+id/name_film" />
 </androidx.constraintlayout.widget.ConstraintLayout>

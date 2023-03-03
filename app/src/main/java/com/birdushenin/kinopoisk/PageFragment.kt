@@ -20,7 +20,6 @@ class PageFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_page, container, false)
 
         binding = FragmentPageBinding.bind(view)
-
         setUpAdapter()
 
         return view
